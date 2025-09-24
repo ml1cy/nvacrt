@@ -1,106 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>NovaCrypt | Cyber Security</title>
-	<!-- Tailwind CSS CDN -->
+	<title>NovaCrypt Cybersecurity</title>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<style>
-		:root {
-			--risd-blue: #414BFB;
-			--bittersweet: #FB5B4F;
-			--cerise: #E93B6B;
-			--dodger-blue: #0793F7;
-			--orange-wheel: #FD8732;
-			--folly: #F04C5C;
-			--rich-black: #000213;
-			--steel-pink: #DF15D3;
-			--raisin-black: #1D1E23;
-			--grape: #5A26A5;
-		}
-		.bg-gradient-main {
-			background: linear-gradient(90deg, var(--risd-blue) 0%, var(--dodger-blue) 50%, var(--grape) 100%);
-		}
-		.bg-gradient-btn {
-			background: linear-gradient(90deg, var(--bittersweet) 0%, var(--cerise) 100%);
-		}
-		.text-gradient {
-			background: linear-gradient(90deg, var(--dodger-blue), var(--steel-pink));
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	</style>
 </head>
-<body class="min-h-screen bg-[var(--raisin-black)] text-white font-sans">
+<body class="bg-gray-900 text-gray-100">
 	<!-- Navbar -->
-	<nav class="bg-gradient-main rounded-b-2xl shadow-lg px-6 py-3 flex items-center justify-between">
-		<div class="flex items-center gap-3">
-			<img src="Novacrypt.svg" alt="NovaCrypt Logo" class="h-10 w-10 shadow-md">
-			<span class="text-2xl font-bold text-gradient">NovaCrypt</span>
+	<nav class="bg-gray-950 shadow-md">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16 items-center">
+				<div class="flex items-center">
+					<img src="logo.svg" alt="NovaCrypt Logo" class="h-10 w-10 mr-3">
+					<span class="font-bold text-xl text-indigo-700">NovaCrypt</span>
+				</div>
+				<div class="hidden md:flex space-x-8">
+					<a href="#services" class="text-gray-300 hover:text-indigo-400 font-medium">Services</a>
+					<a href="#about" class="text-gray-300 hover:text-indigo-400 font-medium">About</a>
+					<a href="#contact" class="text-gray-300 hover:text-indigo-400 font-medium">Contact</a>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center">
+					<button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+				</div>
+			</div>
 		</div>
-		<div class="space-x-6 hidden md:flex">
-			<a href="#services" class="text-white hover:text-[var(--dodger-blue)] font-medium transition">Services</a>
-			<a href="#about" class="text-white hover:text-[var(--dodger-blue)] font-medium transition">About</a>
-			<a href="#contact" class="text-white hover:text-[var(--dodger-blue)] font-medium transition">Contact</a>
+		<!-- Mobile menu -->
+		<div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+			<a href="#services" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">Services</a>
+			<a href="#about" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">About</a>
+			<a href="#contact" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">Contact</a>
 		</div>
-		<a href="#contact" class="bg-gradient-btn text-white px-5 py-2 rounded-full font-semibold shadow hover:scale-105 transition">Get Started</a>
 	</nav>
 
 	<!-- Hero Section -->
-	<section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 gap-10">
-		<div class="max-w-xl">
-			<h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gradient">Protecting Your Digital World</h1>
-			<p class="text-lg text-gray-200 mb-8">NovaCrypt delivers cutting-edge cyber security solutions for businesses and individuals. Safeguard your data, defend your reputation, and stay ahead of threats with our expert team.</p>
-			<a href="#contact" class="bg-gradient-btn px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition">Request a Consultation</a>
-		</div>
-		<div class="flex-1 flex justify-center">
-			<img src="Novacrypt.svg" alt="NovaCrypt Logo Large" class="h-48 w-48 md:h-64 md:w-64 rounded-2xl shadow-2xl bg-white p-4">
+	<section class="max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center bg-gray-900">
+		<div class="md:w-1/2 mb-10 md:mb-0">
+			<h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-400 mb-6">Protecting Your Digital World</h1>
+			<p class="text-lg text-gray-300 mb-8">NovaCrypt delivers cutting-edge cybersecurity solutions to safeguard your business from evolving threats. Trust our experts to keep your data secure and your operations resilient.</p>
+			<a href="#contact" class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">Get Started</a>
 		</div>
 	</section>
 
 	<!-- Services Section -->
-	<section id="services" class="px-6 md:px-20 py-12">
-		<h2 class="text-3xl font-bold mb-8 text-gradient">Our Services</h2>
-		<div class="grid md:grid-cols-3 gap-8">
-			<div class="bg-[var(--rich-black)] rounded-xl p-6 shadow-lg border border-[var(--risd-blue)]">
-				<h3 class="text-xl font-semibold mb-2 text-[var(--dodger-blue)]">Penetration Testing</h3>
-				<p class="text-gray-300">Identify vulnerabilities before attackers do. Our experts simulate real-world attacks to secure your systems.</p>
-			</div>
-			<div class="bg-[var(--rich-black)] rounded-xl p-6 shadow-lg border border-[var(--cerise)]">
-				<h3 class="text-xl font-semibold mb-2 text-[var(--cerise)]">Security Audits</h3>
-				<p class="text-gray-300">Comprehensive assessments to ensure your business meets the highest security standards and compliance.</p>
-			</div>
-			<div class="bg-[var(--rich-black)] rounded-xl p-6 shadow-lg border border-[var(--orange-wheel)]">
-				<h3 class="text-xl font-semibold mb-2 text-[var(--orange-wheel)]">Incident Response</h3>
-				<p class="text-gray-300">Rapid response and recovery from cyber incidents, minimizing damage and restoring operations quickly.</p>
+	<section id="services" class="bg-gray-950 py-16">
+		<div class="max-w-7xl mx-auto px-4">
+			<h2 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Our Services</h2>
+			<div class="grid gap-8 md:grid-cols-3">
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Threat Detection</h3>
+				<p class="text-gray-300">Advanced monitoring to identify and neutralize cyber threats before they impact your business.</p>
+				</div>
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Data Protection</h3>
+				<p class="text-gray-300">Robust encryption and backup solutions to keep your sensitive information safe and recoverable.</p>
+				</div>
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Security Consulting</h3>
+				<p class="text-gray-300">Expert advice and tailored strategies to strengthen your organization’s cybersecurity posture.</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- About Section -->
-	<section id="about" class="px-6 md:px-20 py-12">
-		<div class="bg-gradient-to-r from-[var(--grape)] via-[var(--risd-blue)] to-[var(--dodger-blue)] rounded-2xl p-8 shadow-xl">
-			<h2 class="text-3xl font-bold mb-4 text-white">About NovaCrypt</h2>
-			<p class="text-gray-200">Founded by passionate cyber security professionals, NovaCrypt is dedicated to protecting organizations from evolving digital threats. We combine expertise, innovation, and a client-first approach to deliver robust security solutions tailored to your needs.</p>
+	<section id="about" class="max-w-7xl mx-auto px-4 py-16 bg-gray-900">
+		<div class="md:flex md:items-center md:space-x-12">
+			<div class="md:w-1/2 mb-8 md:mb-0">
+				<h2 class="text-3xl font-bold text-indigo-400 mb-4">About NovaCrypt</h2>
+				<p class="text-gray-300 mb-4">Founded by cybersecurity professionals, NovaCrypt is dedicated to protecting businesses of all sizes. Our team combines deep expertise with innovative technology to deliver reliable, scalable security solutions.</p>
+				<p class="text-gray-300">We believe in proactive defense, continuous improvement, and building trust with every client.</p>
+			</div>
+			<div class="md:w-1/2 flex justify-center">
+				<img src="logo.svg" alt="NovaCrypt Team" class="h-32 w-32 md:h-48 md:w-48">
+			</div>
 		</div>
 	</section>
 
 	<!-- Contact Section -->
-	<section id="contact" class="px-6 md:px-20 py-12">
-		<h2 class="text-3xl font-bold mb-6 text-gradient">Contact Us</h2>
-		<form class="max-w-lg bg-[var(--rich-black)] rounded-2xl p-8 shadow-lg border border-[var(--dodger-blue)] mx-auto flex flex-col gap-5">
-			<input type="text" placeholder="Your Name" class="rounded-lg px-4 py-3 bg-[var(--raisin-black)] text-white border border-[var(--dodger-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--dodger-blue)]" required>
-			<input type="email" placeholder="Your Email" class="rounded-lg px-4 py-3 bg-[var(--raisin-black)] text-white border border-[var(--dodger-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--dodger-blue)]" required>
-			<textarea placeholder="Your Message" rows="4" class="rounded-lg px-4 py-3 bg-[var(--raisin-black)] text-white border border-[var(--dodger-blue)] focus:outline-none focus:ring-2 focus:ring-[var(--dodger-blue)]" required></textarea>
-			<button type="submit" class="bg-gradient-btn px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition">Send Message</button>
-		</form>
+	<section id="contact" class="bg-gray-950 py-16">
+		<div class="max-w-2xl mx-auto px-4">
+			<h2 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Contact Us</h2>
+			<form class="space-y-6">
+				<div>
+					<label for="name" class="block text-gray-300 font-medium mb-2">Name</label>
+					<input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+				</div>
+				<div>
+					<label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+					<input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+				</div>
+				<div>
+					<label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+					<textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+				</div>
+				<button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">Send Message</button>
+			</form>
+		</div>
 	</section>
 
 	<!-- Footer -->
-	<footer class="text-center py-6 text-gray-400">
-		&copy; 2025 NovaCrypt. All rights reserved.
+	<footer class="bg-gray-950 py-6 mt-12">
+		<div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
+			&copy; 2025 NovaCrypt. All rights reserved.
+		</div>
 	</footer>
+
+	<!-- Mobile menu script -->
+	<script>
+		const menuBtn = document.getElementById('menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		menuBtn.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+		});
+	</script>
 </body>
 </html>
