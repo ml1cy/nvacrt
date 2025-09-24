@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NovaCrypt Cybersecurity</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-100">
+	<!-- Navbar -->
+	<nav class="bg-gray-950 shadow-md">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16 items-center">
+				<div class="flex items-center">
+					<img src="logo.svg" alt="NovaCrypt Logo" class="h-10 w-10 mr-3">
+					<span class="font-bold text-xl text-indigo-700">NovaCrypt</span>
+				</div>
+				<div class="hidden md:flex space-x-8">
+					<a href="#services" class="text-gray-300 hover:text-indigo-400 font-medium">Services</a>
+					<a href="#about" class="text-gray-300 hover:text-indigo-400 font-medium">About</a>
+					<a href="#contact" class="text-gray-300 hover:text-indigo-400 font-medium">Contact</a>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="md:hidden flex items-center">
+					<button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Mobile menu -->
+		<div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+			<a href="#services" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">Services</a>
+			<a href="#about" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">About</a>
+			<a href="#contact" class="block py-2 text-gray-300 hover:text-indigo-400 font-medium">Contact</a>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="max-w-7xl mx-auto px-4 py-16 flex flex-col md:flex-row items-center bg-gray-900">
+		<div class="md:w-1/2 mb-10 md:mb-0">
+			<h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-400 mb-6">Protecting Your Digital World</h1>
+			<p class="text-lg text-gray-300 mb-8">NovaCrypt delivers cutting-edge cybersecurity solutions to safeguard your business from evolving threats. Trust our experts to keep your data secure and your operations resilient.</p>
+			<a href="#contact" class="inline-block px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">Get Started</a>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services" class="bg-gray-950 py-16">
+		<div class="max-w-7xl mx-auto px-4">
+			<h2 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Our Services</h2>
+			<div class="grid gap-8 md:grid-cols-3">
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Threat Detection</h3>
+				<p class="text-gray-300">Advanced monitoring to identify and neutralize cyber threats before they impact your business.</p>
+				</div>
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Data Protection</h3>
+				<p class="text-gray-300">Robust encryption and backup solutions to keep your sensitive information safe and recoverable.</p>
+				</div>
+				<div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+				<h3 class="text-xl font-semibold mb-3 text-indigo-300">Security Consulting</h3>
+				<p class="text-gray-300">Expert advice and tailored strategies to strengthen your organization’s cybersecurity posture.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="max-w-7xl mx-auto px-4 py-16 bg-gray-900">
+		<div class="md:flex md:items-center md:space-x-12">
+			<div class="md:w-1/2 mb-8 md:mb-0">
+				<h2 class="text-3xl font-bold text-indigo-400 mb-4">About NovaCrypt</h2>
+				<p class="text-gray-300 mb-4">Founded by cybersecurity professionals, NovaCrypt is dedicated to protecting businesses of all sizes. Our team combines deep expertise with innovative technology to deliver reliable, scalable security solutions.</p>
+				<p class="text-gray-300">We believe in proactive defense, continuous improvement, and building trust with every client.</p>
+			</div>
+			<div class="md:w-1/2 flex justify-center">
+				<img src="logo.svg" alt="NovaCrypt Team" class="h-32 w-32 md:h-48 md:w-48">
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="bg-gray-950 py-16">
+		<div class="max-w-2xl mx-auto px-4">
+			<h2 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Contact Us</h2>
+			<form class="space-y-6">
+				<div>
+					<label for="name" class="block text-gray-300 font-medium mb-2">Name</label>
+					<input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+				</div>
+				<div>
+					<label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+					<input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+				</div>
+				<div>
+					<label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+					<textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-700 bg-gray-900 text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+				</div>
+				<button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700 transition">Send Message</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-950 py-6 mt-12">
+		<div class="max-w-7xl mx-auto px-4 text-center text-gray-400">
+			&copy; 2025 NovaCrypt. All rights reserved.
+		</div>
+	</footer>
+
+	<!-- Mobile menu script -->
+	<script>
+		const menuBtn = document.getElementById('menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		menuBtn.addEventListener('click', () => {
+			mobileMenu.classList.toggle('hidden');
+		});
+	</script>
+</body>
+</html>
